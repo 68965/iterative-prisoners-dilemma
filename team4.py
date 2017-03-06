@@ -36,7 +36,7 @@ def move(my_history, their_history, my_score, their_score):
                     (prior_round_them == recent_round_them):
                 return their_history[round]
         # No match found
-        if my_history[-1]=='c' and their_history=='b'or my_score < their_score:
+        if their_history=='b'or my_score < their_score:
             return 'b' # Betray if they were severely punished last time
         else:
             return 'c' # Otherwise collude.
